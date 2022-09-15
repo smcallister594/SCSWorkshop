@@ -115,7 +115,7 @@ style: |
             </ul>
         </div>
     <div class="grid-child">
-        <div class="name">Rob Sewell</div>
+        <div class="name">Rob Sewell - He/Him</div>
             <ul>
                 <li class="blog">blog.robsewell.com</li>
                 <li class="github">SQLDBAWithABeard</li>
