@@ -1,0 +1,25 @@
+name: Create a New Event PR
+
+on: 
+ pull_request:
+   types:
+     - "opened"
+
+jobs:
+  Run_the_thing:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with: 
+       clean: true
+       fetch-depth: 0
+    - name: Get Information to file
+      run: |
+        Write-Host "What do we have?"
+        $IssueBody =  @"
+        ${{ github.event.issue.body }}
+        "@
+        # Write-Host $IssueBody 
+        $IssueBody | Out-File ./temp/temp.txt
+      shell: pwsh
+      continue-on-error: true   

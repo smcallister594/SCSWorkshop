@@ -18,7 +18,9 @@
 				"2gua.rainbow-brackets",
 				"oderwat.indent-rainbow",
 				"usernamehw.errorlens",
-				"marp-team.marp-vscode" // for markdown slides
+				"marp-team.marp-vscode", // for markdown slides,
+				"cschleiden.vscode-github-actions",
+				"redhat.vscode-yaml" // for the gihub action intellisense
 			]
 		}
 	},
@@ -52,7 +54,7 @@
 	"remoteUser": "vscode",
 	"features": {
 		"git": "latest",
-		"github-cli": "latest",
+		//"github-cli": "latest",
 		"azure-cli": "latest",
 		"powershell": "latest"
 	},
