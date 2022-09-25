@@ -11,3 +11,12 @@ RUN bash /tmp/library-scripts/azcli-debian.sh \
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
+
+
+## Install hugo
+COPY Hugo/hugo_0.104.0_linux-amd64.deb /tmp/hugo_0.104.0_linux-amd64.deb
+
+RUN dpkg -i /tmp/hugo_0.104.0_linux-amd64.deb
+
+RUN apt-get install -f
+

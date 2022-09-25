@@ -20,7 +20,10 @@
 				"usernamehw.errorlens",
 				"marp-team.marp-vscode", // for markdown slides,
 				"cschleiden.vscode-github-actions",
-				"redhat.vscode-yaml" // for the gihub action intellisense
+				"redhat.vscode-yaml", // for the gihub action intellisense
+
+				"bungcip.better-toml",
+				"davidanson.vscode-markdownlint"
 			]
 		}
 	},
@@ -58,5 +61,9 @@
 		"azure-cli": "latest",
 		"powershell": "latest"
 	},
-	"postAttachCommand": "pwsh .devcontainer/postCreateCommand.ps1"
+	"postAttachCommand": "pwsh .devcontainer/postCreateCommand.ps1",
+
+	"forwardPorts": [
+		1313
+	]
 }
