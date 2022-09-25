@@ -18,3 +18,6 @@ Get-Content $resourcesFile | Out-File -FilePath $oldFile -Append
 $message = '# resources created - {0}' -f (Get-Date).ToLongDateString()
 
 $message |Out-File -FilePath $resourcesFile
+
+# mark this as a safe directory for git to play nice
+git config --global --add safe.directory /workspaces/SCSWorkshop
