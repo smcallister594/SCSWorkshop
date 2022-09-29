@@ -1,6 +1,7 @@
-# Lesson 1 - Forking & Cloning
+# Lesson 1 - What the Github?
 
 ## New Terms
+
 - **Repository** - A folder of code, docs, tests, etc.
 - **Forking** - The process of creating a fork.
   - A **Fork** is a copy of a repo. </br>
@@ -8,11 +9,13 @@
 - **Cloning** - The process of creating a local copy of a repo on your machine.
 
 ## Prerequisites
+
 - Download and install [Git](https://git-scm.com/downloads)
 
 ## Lesson
 
 ### Stage 1 - Fork a repo
+
 1. Navigate to [SCSWorkshop](https://github.com/jpomfret/SCSWorkshop) on GitHub
 2. Fork the repo for your user
 

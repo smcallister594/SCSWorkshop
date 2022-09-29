@@ -1,11 +1,13 @@
 # Lesson 3 - Making a Change
 
 ## New Terms
+
 - **Branch** - Copy of the code in a more isolated environment. Safe space to make changes.
 - **Checkout** - Used to change branches. If the branch doesn't exist yet you can create it during checkout.
 - **Commit** - Saving your changes. Make sure to include a useful commit message.
 
 ## Prerequisites
+
 - Make sure your repo is in sync - [Lesson 2](../Lessons/Lesson2.md)
 
 ## Lesson
@@ -13,17 +15,20 @@
 ### Stage 1 - Create a branch to work
 
 1. Navigate to your repo if you're not already there
+
     ``` PowerShell
     Set-Location C:\GitHub\SCSWorkshop
     ```
 
 2. Check status to see where you are
-    ```
+
+    ```bash
     git status
     ```
 
 3. Create a new branch
-    ```
+
+    ```bash
     git checkout -b addFriends
     ```
 
@@ -37,31 +42,31 @@
 
 2. Checking the status will now show we have an unstaged change:
 
-    ```
+    ```bash
     git status
     ```
 
 3. Stage the file - preparing for commit. By staging you can pick which files are being committed, you don't have to commit all at once.
 
-    ```
+    ```bash
     git add .\README.md
     ```
 
 4. Checking the status will now show we have a change ready to commit:
 
-    ```
+    ```bash
     git status
     ```
 
 5. Commit the change. Make sure to include a useful commit message.
 
-    ```
+    ```bash
     git commit -m 'adding my name'
     ```
 
-5. Push changes to your repo
+6. Push changes to your repo
 
-    ```
+    ```bash
     git push --set-upstream origin addFriends
     ```
 
@@ -69,7 +74,7 @@
 
     **Note**: You can now change this behaviour by changing this config
 
-    ```
+    ```bash
     git config --global push.default current
     ```
 
@@ -80,5 +85,6 @@
 3. Fill in the form and submit the PR for approval.
 4. Upstream repo owner or someone with permissions can merge it in.
 
-## Next Up...
+## Next Up
+
 - [Lesson 4](../Lessons/Lesson4.md)
