@@ -31,7 +31,6 @@ hugo v0.104.0-c744dbd6edeeb27288c9dd67e0eb92951f911397 linux/amd64 BuildDate=202
 
     ```PowerShell
     cd SouthCoastSummit
-    git init
     git submodule add https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo
     ```
 
@@ -64,7 +63,7 @@ hugo v0.104.0-c744dbd6edeeb27288c9dd67e0eb92951f911397 linux/amd64 BuildDate=202
 1. Open the post & add some interesting content
 
     ```PowerShell
-    code ./content/posts/WorkshopDay.md
+    code content/posts/WorkshopDay.md
     ```
 
 1. Start up hugo (with drafts enabled)
