@@ -13,12 +13,14 @@ jobs:
       with: 
        clean: true
        fetch-depth: 0
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJSON(github) }}
+      run: echo "$GITHUB_CONTEXT"
     - name: Run a command
       run: |
         Write-Host "What do we have?"
-        $PRBody =  @"
-        ${{ github.event.pull_request }}
-        "@
+        $PRBody =  " We have - {0}" -f ${{ github.event.pull_request }}
         Write-Host $PRBody 
       shell: pwsh
       continue-on-error: true   
