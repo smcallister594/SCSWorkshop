@@ -20,7 +20,7 @@ jobs:
     - name: Run a command
       run: |
         $Question = "Who Opened PR {0} titled {1}?" -f '${{ github.event.pull_request.number }}' , '${{ github.event.pull_request.title }}' 
-        $Answer = "{2} Opened PR {0} titled {1}?" -f '${{ github.event.pull_request.number }}' , '${{ github.event.pull_request.title }}' , '${{ github.event.pull_request.user.login }}' 
+        $Answer = "{2} Opened PR {0} titled {1}" -f '${{ github.event.pull_request.number }}' , '${{ github.event.pull_request.title }}' , '${{ github.event.pull_request.user.login }}' 
         
         Write-Host $Question 
         Write-Host $Answer
