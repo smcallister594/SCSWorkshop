@@ -1,76 +1,28 @@
-# Lesson 2 - Keeping in Sync
+# Lesson 2 - More than Source Control 2
 
-## New Terms
-- **Remote** - Somewhere code is stored, not on your machine. In this case a GitHub Repo.
-    - **Origin** - When we clone a repo the source of that clone is added as this remote location.
-    - **Upstream** - What we are naming the remote location of the original repo we forked.
-- **Fetch** - Git command to retrieve new work from an upstream.
-- **Merge** - Used to combine the fetched changes with your local work.
-- **Pull** - Fetch & Merge in one go.
-- **Push** - Upload your local changes to a remote repo.
+## Repositories
 
-## Prerequisites
-- Have a repo cloned to your computer - [Lesson 1](../Lessons/Lesson1.md)
+- As well as source control, for keeping your code changes safe and enabling collaboration with branching, forking, cloning, and Pull Requests, GitHub also provides a place to manage your 'project' or 'product' or 'application' or 'solution' or 'whatever you want to call it'.
 
-## Lesson
+### Issues
 
-### Stage 1 - Setting up a remote Upstream
-1. Navigate to your repo if you're not already there
+- Issues are a place to track bugs, enhancements, and other things that need to be done. They can be assigned to people, have labels, and be assigned to milestones. They can also be linked to pull requests.
 
-    ``` PowerShell
-    Set-Location C:\GitHub\SCSWorkshop
-    ```
+https://github.com/dataplat/dbatools/issues 
 
-2. View current remote
-    ```
-    git remote -v
-    ```
+### Wikis
 
-    You should see the origin, which was added when you cloned the repo.
+- Wikis are a place to document your project. They can be edited by anyone with access to the repository. They can also be linked to issues and pull requests.
+https://github.com/dataplat/DataSaturdays/wiki 
 
-    ```
-    origin  https://github.com/<<USERNAME>>/SCSWorkshop.git (fetch)
-    origin  https://github.com/<<USERNAME>>/SCSWorkshop.git (push)
-    ```
+### Discussions
 
-3. Add remote named 'upstream' to refer to the original repo that we forked & cloned (someone elses code).
+- Discussions are a place to have conversations about your project. They can be edited by anyone with access to the repository. They can also be linked to issues and pull requests.
 
-    ```
-    git remote add upstream https://github.com/jpomfret/SCSWorkshop.git
-    ```
+https://github.com/dataplat/dbatools/discussions
 
-4. View remotes again
-    ```
-    git remote -v
-    ```
+## Projects
 
-    You should now see the origin and upstream.
+- Projects are a place to track your work. You can create a project board and add issues, pull requests, and other things to it. You can also create a Kanban board and add issues, pull requests, and other things to it.
 
-    ```
-    origin  https://github.com/<<USERNAME>>/SCSWorkshop.git (fetch)
-    origin  https://github.com/<<USERNAME>>/SCSWorkshop.git (push)
-    upstream        https://github.com/jpomfret/SCSWorkshop.git (fetch)
-    upstream        https://github.com/jpomfret/SCSWorkshop.git (push)
-    ```
-
-### Stage 2 - 'This branch is 2 commits behind jpomfret:main'
-Folks have been working on the jpomfret code base and it's now got newer code than your fork.
-
-1. Pull changes from upstream into your clone (main branch in this example)
-
-    ```
-    git pull upstream main
-    ```
-
-2. Push changes to your fork
-
-    ```
-    git push
-    ```
-
-3. Check GitHub - your fork should now show you're back in sync.
-    > This Branch is even with jpomfret:main.
-
-## Next Up...
-
-- [Lesson 3](../Lessons/Lesson3.md)
+https://github.com/dataplat/dbachecks/projects/3

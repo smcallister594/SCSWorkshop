@@ -4,6 +4,8 @@
 
 We have just been learning about source control with git. git with a small g can be installed anywhere. Some shops will use GitLab, some will use Azure Repos or maybe TFS, and some will even have their own git server with git installed. GitHub has source control but is even more than that. Lets explore some of the other benefits that we can get with GitHub
 
+# Accoounts
+
 ### GitHub Free
 
 Anyone can sign up for a free personal account. It's pretty neat

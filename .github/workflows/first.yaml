@@ -1,4 +1,4 @@
-name: Create a New Event PR
+name: WHen PR opened do this
 
 on: 
  pull_request:
@@ -13,13 +13,12 @@ jobs:
       with: 
        clean: true
        fetch-depth: 0
-    - name: Get Information to file
+    - name: Run a command
       run: |
         Write-Host "What do we have?"
-        $IssueBody =  @"
-        ${{ github.event.issue.body }}
+        $PRBody =  @"
+        ${{ github.event.pr.body }}
         "@
-        # Write-Host $IssueBody 
-        $IssueBody | Out-File ./temp/temp.txt
+        Write-Host $PRBody 
       shell: pwsh
       continue-on-error: true   
