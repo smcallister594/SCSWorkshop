@@ -17,7 +17,7 @@ jobs:
       run: |
         Write-Host "What do we have?"
         $PRBody =  @"
-        ${{ github.event.pull_request.body }}
+        ${{ github.event.pull_request }}
         "@
         Write-Host $PRBody 
       shell: pwsh
