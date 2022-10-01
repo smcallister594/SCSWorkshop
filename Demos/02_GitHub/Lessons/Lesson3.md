@@ -1,4 +1,4 @@
-# Lesson 3 - More than Source Control 3
+# Lesson 3 - More than Source Control 2
 
 ## GitHub Actions
 

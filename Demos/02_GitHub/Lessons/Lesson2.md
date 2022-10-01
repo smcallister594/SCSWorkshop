@@ -1,4 +1,4 @@
-# Lesson 2 - More than Source Control 2
+# Lesson 2 - More than Source Control
 
 ## Repositories
 

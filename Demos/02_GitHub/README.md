@@ -1,9 +1,8 @@
 # GitDemo
 Lets learn Git
 
-- [Lesson 1](Lessons/Lesson1.md) - Forking & Cloning
-- [Lesson 2](Lessons/Lesson2.md) - Keeping in Sync
-- [Lesson 3](Lessons/Lesson3.md) - Making a change
-- [Lesson 4](Lessons/Lesson4.md) - Oh G*T - I'm on the wrong branch
-- [Lesson 5](Lessons/Lesson5.md) - Rebasing your branch
-- [Lesson 6](Lessons/Lesson6.md) - Cleanup those branches
+- [Lesson 1](Lessons/Lesson1.md) - What the Github?
+- [Lesson 2](Lessons/Lesson2.md) - More than Source Control
+- [Lesson 3](Lessons/Lesson3.md) - More than Source Control 2
+- [Lesson 4](Lessons/Lesson4.md) - GitHub Copilot
+- [Lesson 5](Lessons/Lesson5.md) - GitHub Actions
