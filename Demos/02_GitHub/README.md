@@ -1,5 +1,5 @@
-# GitDemo
-Lets learn Git
+# GitHub Demo
+Lets learn GitHub
 
 - [Lesson 1](Lessons/Lesson1.md) - What the Github?
 - [Lesson 2](Lessons/Lesson2.md) - More than Source Control
