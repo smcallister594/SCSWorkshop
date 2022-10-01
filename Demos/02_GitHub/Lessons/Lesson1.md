@@ -1,55 +1,25 @@
 # Lesson 1 - What the Github?
 
-## New Terms
+## More than Source Control
 
-- **Repository** - A folder of code, docs, tests, etc.
-- **Forking** - The process of creating a fork.
-  - A **Fork** is a copy of a repo. </br>
-  - Can be used to experiment with someone elses code.
-- **Cloning** - The process of creating a local copy of a repo on your machine.
+We have just been learning about source control with git. git with a small g can be installed anywhere. Some shops will use GitLab, some will use Azure Repos or maybe TFS, and some will even have their own git server with git installed. GitHub has souurce control but is even more than that. Lets explore some of the other benfits that we can get with GitHub
 
-## Prerequisites
+### GitHub Free
 
-- Download and install [Git](https://git-scm.com/downloads)
+Anyone can sign up for a free personal account
 
-## Lesson
+    - As 
 
-### Stage 1 - Fork a repo
+### GitHub Pro
 
-1. Navigate to [SCSWorkshop](https://github.com/jpomfret/SCSWorkshop) on GitHub
-2. Fork the repo for your user
+### GitHub Team
 
-### Stage 2 - Clone a repo
+### GitHub Enterprise
 
-1. Create a folder to hold your GitHub Repos
+## Accounts
 
-    ``` PowerShell
-    New-Item -Path C:\GitHub -ItemType Directory
-    ```
+There are three types of accounts
 
-2. Navigate into the folder
-
-    ``` PowerShell
-    Set-Location C:\GitHub
-    ```
-
-3. Clone the newly forked repo
-
-    ``` git
-    git clone https://github.com/<<USERNAME>>/SCSWorkshop.git
-    ```
-
-4. Navigate into the repo
-
-    ``` PowerShell
-    Set-Location .\SCSWorkshop\
-    ```
-
-5. Have a look at the status
-
-    ``` git
-    git status
-    ```
-
-## Next Up...
-- [Lesson 2](../Lessons/Lesson2.md)
+- Personal
+- Organizational
+- Enterprise
