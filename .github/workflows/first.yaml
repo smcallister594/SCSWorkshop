@@ -19,8 +19,10 @@ jobs:
       run: echo "$GITHUB_CONTEXT"
     - name: Run a command
       run: |
-        Write-Host "What do we have?"
-        $PRBody =  " We have - {0}" -f ${{ github.event.pull_request }}
-        Write-Host $PRBody 
+        $Question = "Who Opened PR {0} titled {1}?" -f ${{ github.event.pull_request.number }} , ${{ github.event.pull_request.title }} 
+        $Answer = "{3} Opened PR {0} titled {1}?" -f ${{ github.event.pull_request.number }} , ${{ github.event.pull_request.title }} , ${{ github.event.pull_request.user.login }} 
+        
+        Write-Host $Question 
+        Write-Host $Answer
       shell: pwsh
       continue-on-error: true   
