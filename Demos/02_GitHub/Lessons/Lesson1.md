@@ -4,7 +4,7 @@
 
 We have just been learning about source control with git. git with a small g can be installed anywhere. Some shops will use GitLab, some will use Azure Repos or maybe TFS, and some will even have their own git server with git installed. GitHub has source control but is even more than that. Lets explore some of the other benefits that we can get with GitHub
 
-# Accoounts
+# Accounts
 
 ### GitHub Free
 
@@ -30,6 +30,7 @@ The Pro account is $4/month and also gets you
     - Support via email
     - More features in private repositories
     - [More details](https://docs.github.com/en/get-started/learning-about-github/githubs-products#github-pro)
+
 ### GitHub Team
 
 Now we are getting serious. The Team account is $4/user/month and also gets you
@@ -59,4 +60,3 @@ There are three types of accounts
 - Organizational
     https://github.com/orgs/dataplat/teams
 - Enterprise
-    

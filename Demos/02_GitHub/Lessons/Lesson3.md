@@ -11,7 +11,7 @@ GitHub Packages is a way to store your packages. You can store your NuGet packag
 ## GitHub Pages
 
 GitHub Pages is a way to host your static web pages. You can host your static web pages from your repository. You can also host your static web pages from your repository privately or publicly.
-https://github.com/SQLDBAWithABeard/robsewell/actions 
+https://github.com/SQLDBAWithABeard/robsewell/actions
 
 ## GitHub Codespaces
 

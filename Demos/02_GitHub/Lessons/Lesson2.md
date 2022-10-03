@@ -8,12 +8,12 @@
 
 - Issues are a place to track bugs, enhancements, and other things that need to be done. They can be assigned to people, have labels, and be assigned to milestones. They can also be linked to pull requests.
 
-https://github.com/dataplat/dbatools/issues 
+https://github.com/dataplat/dbatools/issues
 
 ### Wikis
 
 - Wikis are a place to document your project. They can be edited by anyone with access to the repository. They can also be linked to issues and pull requests.
-https://github.com/dataplat/DataSaturdays/wiki 
+https://github.com/dataplat/DataSaturdays/wiki
 
 ### Discussions
 

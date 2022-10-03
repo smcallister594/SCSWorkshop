@@ -2,7 +2,7 @@
 
 Lets take a look at GitHub Actions.
 
-https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#createevent 
+https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#createevent
 
 [First Action](../.github/workflows/first.yml)
 
@@ -10,4 +10,4 @@ https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-event
 
 In action
 
-https://github.com/jpomfret/SCSWorkshop/pulls 
+https://github.com/jpomfret/SCSWorkshop/pulls
