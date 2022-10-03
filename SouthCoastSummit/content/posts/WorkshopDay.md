@@ -1,8 +1,9 @@
 ---
 title: "WorkshopDay"
-date: 2022-10-03T19:23:48Z
-draft: true
+date: 2022-10-03T19:47:04Z
+draft: false
 ---
 
-## hello
-this is my website
+## testing
+
+This is a test post
