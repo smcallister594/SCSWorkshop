@@ -23,7 +23,9 @@
 				"redhat.vscode-yaml", // for the gihub action intellisense
 				"bungcip.better-toml",
 				"davidanson.vscode-markdownlint",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"ms-azuretools.vscode-azurestaticwebapps",
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	},
