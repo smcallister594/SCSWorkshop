@@ -1,4 +1,4 @@
-# Lesson 6 - Cleanup those branches
+# Lesson 6 - Clean up those branches
 
 ## Prerequisites
 
@@ -40,7 +40,7 @@
 
     >https://gist.github.com/srkirkland/63ed5730da1bf607a4b3
 
-### Stage 2 - Cleanup GitHub Branches
+### Stage 2 - Clean up GitHub Branches
 
 1. Navigate to your GitHub Repo (e.g. www.github.com/jpomfret/SCSWorkshop)
 2. Click branches (or navigate to e.g. www.github.com/jpomfret/SCSWorkshop/branches)

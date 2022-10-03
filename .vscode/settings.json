@@ -1,5 +1,14 @@
 {
     "yaml.schemas": {
         "https://json.schemastore.org/github-workflow.json": "file:///workspaces/SCSWorkshop/.gtihub/workflows/first.yaml"
-    }
+    },
+    "cSpell.enableFiletypes": [
+        "markdown"
+    ],
+    "cSpell.language": "en-GB",
+    "cSpell.words": [
+        "codespaces",
+        "jpomfret",
+        "Kanban"
+    ]
 }
