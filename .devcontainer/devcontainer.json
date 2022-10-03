@@ -18,7 +18,6 @@
 				"2gua.rainbow-brackets",
 				"oderwat.indent-rainbow",
 				"usernamehw.errorlens",
-				"marp-team.marp-vscode", // for markdown slides,
 				"cschleiden.vscode-github-actions",
 				"redhat.vscode-yaml", // for the gihub action intellisense
 				"bungcip.better-toml",

@@ -1,7 +1,3 @@
----
-marp: true
----
-
 # Agenda
 
 - 08:00 – 08:45 - Registration
