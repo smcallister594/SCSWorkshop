@@ -1,13 +1,8 @@
 ---
 title: "WorkshopDay"
-date: 2022-09-30T15:36:26Z
+date: 2022-10-03T19:23:48Z
 draft: true
 ---
 
-## What a great day
-
-I've learnt a lot including:
-
-- git
-- bicep
-- hugo
+## hello
+this is my website
