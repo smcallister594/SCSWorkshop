@@ -31,6 +31,20 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "public" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+  notification:
+    runs-on: ubuntu-latest
+    name: Send a Notification Job 
+    steps:
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJSON(github) }}
+      run: echo "$GITHUB_CONTEXT"
+    - name: Send a Notification
+      id: notify
+      uses: thechetantalwar/teams-notify@v2
+      with:
+       teams_webhook_url: ${{ secrets.BeardTeams }}
+       message: "GitHub Action Build Number ${{ github.run_number }} Completed for Pull Request ${       github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }} and the outcome is  ${{ github.event.action }}."
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
