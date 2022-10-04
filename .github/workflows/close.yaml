@@ -13,9 +13,13 @@ jobs:
       with: 
        clean: true
        fetch-depth: 0
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJSON(github) }}
+      run: echo "$GITHUB_CONTEXT"
     - name: Send a Notification
       id: notify
       uses: thechetantalwar/teams-notify@v2
       with:
        teams_webhook_url: ${{ secrets.BeardTeams }}
-       message: "GitHub Action Build Number ${{ github.run_number }} Completed for ${{ github.repository }} and the outcome is  ${{ needs.build.result }}."
+       message: "GitHub Action Build Number ${{ github.run_number }} Completed for Pull Request ${{ github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }}  and the outcome is  ${{ needs.build.result }}."
