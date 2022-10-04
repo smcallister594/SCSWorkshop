@@ -4,4 +4,4 @@ title: Jess & Rob's Super Site
 
 module:
   imports:
-    - path: gitlab.com/kaushalmodi/hugo-mwe-theme
+    - path: github.com/CaiJimmy/hugo-theme-stack-starter
