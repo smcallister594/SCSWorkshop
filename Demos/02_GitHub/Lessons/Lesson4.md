@@ -2,4 +2,4 @@
 
 Lets take a look at GitHub CoPilot.
 
-[Codespaces](copilot.ps1)
+[CoPilot](copilot.ps1)
