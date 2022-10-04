@@ -32,6 +32,7 @@ jobs:
           output_location: "public" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
   notification:
+    needs: build_and_deploy_job
     runs-on: ubuntu-latest
     name: Send a Notification Job 
     steps:
@@ -44,7 +45,7 @@ jobs:
       uses: thechetantalwar/teams-notify@v2
       with:
        teams_webhook_url: ${{ secrets.BeardTeams }}
-       message: "GitHub Action Build Number ${{ github.run_number }} Completed for Pull Request ${{       github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }} and the outcome is  ${{ github.event.action }}."
+       message: "GitHub Action Build and Deploy - Action Number ${{ github.run_number }} has completed for Pull Request ${{ github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }}"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
