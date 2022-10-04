@@ -1,4 +1,4 @@
-name: WHen PR opened do this
+name: When PR closed do this
 
 on: 
  pull_request:
@@ -18,4 +18,4 @@ jobs:
       uses: thechetantalwar/teams-notify@v2
       with:
        teams_webhook_url: ${{ secrets.BeardTeams }}
-       message: "Github Action Build Number ${{ github.run_number }} Completed for ${{ github.repository }} and the outcome is  ${{ needs.build.result }}."
+       message: "GitHub Action Build Number ${{ github.run_number }} Completed for ${{ github.repository }} and the outcome is  ${{ needs.build.result }}."
