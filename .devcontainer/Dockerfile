@@ -14,9 +14,9 @@ RUN bash /tmp/library-scripts/azcli-debian.sh \
 
 
 ## Install hugo
-COPY Hugo/hugo_0.104.0_linux-amd64.deb /tmp/hugo_0.104.0_linux-amd64.deb
+COPY Hugo/hugo_extended_0.104.2_linux-amd64.deb /tmp/hugo_extended_0.104.2_linux-amd64.deb
 
-RUN dpkg -i /tmp/hugo_0.104.0_linux-amd64.deb
+RUN dpkg -i /tmp/hugo_extended_0.104.2_linux-amd64.deb
 
 RUN apt-get install -f
 
