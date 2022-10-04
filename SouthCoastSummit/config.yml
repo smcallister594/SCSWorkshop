@@ -1,7 +1,7 @@
 baseURL: http://example.org/
-languageCode: en-us
+languageCode: en-gb
 title: Jess & Rob's Super Site
 
 module:
   imports:
-  - path: gitlab.com/kaushalmodi/hugo-mwe-theme
+    - path: gitlab.com/kaushalmodi/hugo-mwe-theme
