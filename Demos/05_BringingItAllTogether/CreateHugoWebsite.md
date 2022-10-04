@@ -8,55 +8,65 @@ We can ensure hugo is installed and ready for action by checking the version:
 
 ```PowerShell
 hugo version
+go version
 ```
 
 Something similar to this will be returned
 
 ```Text
 hugo v0.104.0-c744dbd6edeeb27288c9dd67e0eb92951f911397 linux/amd64 BuildDate=2022-09-23T14:32:56Z VendorInfo=gohugoio
+go version go1.19.1 linux/amd64
 ```
 
 ## Create our website
 
 1. Create a new hugo site
 
-    ```PowerShell
-    hugo new site SouthCoastSummit
+    ```bash
+    hugo new site SouthCoastSummit -f yml
     ```
 
-1. Choose a theme from https://themes.gohugo.io/
-    - [Beautiful Hugo](https://themes.gohugo.io/themes/beautifulhugo/)
+1. Change directory
 
-1. Install the theme - this depends on which theme you use, but most make use of git submodules.
-
-    ```PowerShell
+    ```bash
     cd SouthCoastSummit
-    git submodule add https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo
     ```
 
-1. Open `config.toml`
+1. Convert Hugo site to a Hugo Module (this creates the go.mod file)
 
-    a. add the theme
+    ```bash
+    hugo mod init github.com/jpomfret/SCSWorkshop
+    ```
 
-    ```toml
-    theme = 'beautifulhugo'
+1. Open `config.yml`
+
+    ```bash
+    code config.yml
+    ```
+
+    a. add the theme - this is using hugo modules (some themes use git submodules)
+
+    ```yml
+    module:
+      imports:
+        - path: github.com/CaiJimmy/hugo-theme-stack-starter
     ```
 
     a. Update the title
 
-    ```toml
-    title = "Jess & Rob's Super Site"
+    ```yml
+    title: Jess & Rob's Super Site
     ```
 
-    a. If you have a domain ready set the base url (Azure Static Web Url??)
+    a. If you have a domain ready set the base url (Azure Static Web Url)
 
-    ```toml
-    baseURL = "http://azure.com??/"
+    ```yml
+    baseURL: https://happy-ocean-07fc83203.2.azurestaticapps.net/
     ```
 
 1. Create our first post
 
-    ```PowerShell
+    ```bash
     hugo new posts/WorkshopDay.md
     ```
 
