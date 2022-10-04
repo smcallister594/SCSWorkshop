@@ -20,3 +20,10 @@ RUN dpkg -i /tmp/hugo_0.104.0_linux-amd64.deb
 
 RUN apt-get install -f
 
+## Install Go
+COPY go/go1.18.linux-amd64.tar.gz /tmp/go1.18.linux-amd64.tar.gz
+
+RUN tar -C /usr/local -xvf /tmp/go1.18.linux-amd64.tar.gz
+
+# this doesn't seem to work...need to add to ~/.profile
+COPY go/.profile /home/vscode/.profile
