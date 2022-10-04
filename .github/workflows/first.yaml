@@ -1,4 +1,4 @@
-name: WHen PR opened do this
+name: When PR opened do this
 
 on: 
  pull_request:
