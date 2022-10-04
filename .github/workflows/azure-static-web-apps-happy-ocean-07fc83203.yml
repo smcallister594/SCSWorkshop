@@ -33,6 +33,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
   notification:
     needs: build_and_deploy_job
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     name: Send a Notification Job 
     steps:
