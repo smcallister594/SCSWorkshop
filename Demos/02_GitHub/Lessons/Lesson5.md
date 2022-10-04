@@ -4,9 +4,9 @@ Lets take a look at GitHub Actions.
 
 https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#createevent
 
-[First Action](../.github/workflows/first.yml)
+[First Action](/.github/workflows/first.yaml)
 
-[Second Action](../.github/workflows/close.yml)
+[Second Action](/.github/workflows/close.yaml)
 
 In action
 
