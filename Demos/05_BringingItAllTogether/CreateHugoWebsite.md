@@ -2,7 +2,7 @@
 
 Build a hugo website within our dev container.
 
-![image](https://user-images.githubusercontent.com/981370/192148499-e5fae9d1-0fb6-4fc3-ab64-e33a323131f1.png)
+![image](https://user-images.githubusercontent.com/981370/194907982-1219f67a-a3b7-4ac3-9d5f-e7063abb5ac3.png)
 
 We can ensure hugo is installed and ready for action by checking the version:
 
@@ -23,7 +23,7 @@ go version go1.19.1 linux/amd64
 1. Create a new hugo site
 
     ```bash
-    hugo new site SouthCoastSummit -f yml
+    hugo new site SouthCoastSummit
     ```
 
 1. Change directory
@@ -38,30 +38,54 @@ go version go1.19.1 linux/amd64
     hugo mod init github.com/jpomfret/SCSWorkshop
     ```
 
-1. Open `config.yml`
+1. Create the config folder
+
+    ```PowerShell
+    New-Item /workspaces/SCSWorkshop/SouthCoastSummit/config/_default -Type Directory
+    ```
+
+1. Download the sample config files
+
+    ```PowerShell
+    wget "https://github.com/nunocoracao/blowfish/blob/main/config/_default/config.toml?raw=True" -O /workspaces/SCSWorkshop/SouthCoastSummit/config/_default/config.toml
+    wget "https://github.com/nunocoracao/blowfish/blob/main/config/_default/languages.en.toml?raw=True" -O /workspaces/SCSWorkshop/SouthCoastSummit/config/_default/languages.en.toml
+    wget "https://github.com/nunocoracao/blowfish/blob/main/config/_default/markup.toml?raw=True" -O /workspaces/SCSWorkshop/SouthCoastSummit/config/_default/markup.toml
+    wget "https://github.com/nunocoracao/blowfish/blob/main/config/_default/menus.en.toml?raw=True" -O /workspaces/SCSWorkshop/SouthCoastSummit/config/_default/menus.en.toml
+    wget "https://github.com/nunocoracao/blowfish/blob/main/config/_default/module.toml?raw=True" -O /workspaces/SCSWorkshop/SouthCoastSummit/config/_default/module.toml
+    wget "https://github.com/nunocoracao/blowfish/blob/main/config/_default/params.toml?raw=True" -O /workspaces/SCSWorkshop/SouthCoastSummit/config/_default/params.toml
+    ```
+
+1. Open `module.toml`
 
     ```bash
-    code config.yml
+    code config/_default/module.toml
     ```
 
     a. add the theme - this is using hugo modules (some themes use git submodules)
 
-    ```yml
-    module:
-      imports:
-        - path: github.com/CaiJimmy/hugo-theme-stack-starter
+    ```toml
+    [[imports]]
+    path = "github.com/nunocoracao/blowfish"
+    ```
+
+1. Start up hugo (with drafts enabled)
+
+    ```PowerShell
+    hugo server -D
+    ```
+
+## Let's improve things a bit
+
+1. Let's configure things a little more
+
+    ```PowerShell
+    code config/_default/languages.en.toml
     ```
 
     a. Update the title
 
-    ```yml
-    title: Jess & Rob's Super Site
-    ```
-
-    a. If you have a domain ready set the base url (Azure Static Web Url)
-
-    ```yml
-    baseURL: https://happy-ocean-07fc83203.2.azurestaticapps.net/
+    ```toml
+    title = "Jess & Rob's Super Site"
     ```
 
 1. Create our first post
@@ -84,7 +108,34 @@ go version go1.19.1 linux/amd64
 
 1. Click the toast, or open a browser and go to http://localhost:1313/
 
+## How about a better post?
+
+1. Create a post with a thumbnail
+
+    ```bash
+    hugo new posts/BikeRiding/BikeRiding.md
+    ```
+
+1. Open the post & add some interesting content
+
+    ```PowerShell
+    code content/posts/BikeRiding/index.md
+    ```
+
+1. Copy the image into the `content/posts/BikeRiding` folder and name it `featured.jpg`.
+
+1. Start up hugo
+
+    ```PowerShell
+    hugo server
+    ```
+
+
+
+1. Click the toast, or open a browser and go to http://localhost:1313/
+
 ## Notes
 
-Two versions of Hugo - Normal & extended?
-Different themes have different install methods
+- Two versions of Hugo - Normal & extended?
+- Different themes have different install methods
+- Blowfish has the option of configuring the front page to display posts under the about me stuff
