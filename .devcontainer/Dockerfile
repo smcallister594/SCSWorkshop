@@ -11,19 +11,3 @@ RUN bash /tmp/library-scripts/azcli-debian.sh \
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
-
-
-## Install hugo
-COPY Hugo/hugo_extended_0.104.2_linux-amd64.deb /tmp/hugo_extended_0.104.2_linux-amd64.deb
-
-RUN dpkg -i /tmp/hugo_extended_0.104.2_linux-amd64.deb
-
-RUN apt-get install -f
-
-## Install Go
-COPY go/go1.18.linux-amd64.tar.gz /tmp/go1.18.linux-amd64.tar.gz
-
-RUN tar -C /usr/local -xvf /tmp/go1.18.linux-amd64.tar.gz
-
-# this doesn't seem to work...need to add to ~/.profile
-COPY go/.profile /home/vscode/.profile
