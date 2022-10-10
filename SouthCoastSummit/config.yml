@@ -1,7 +1,0 @@
-baseURL: https://happy-ocean-07fc83203.2.azurestaticapps.net/
-languageCode: en-gb
-title: Jess & Rob's Super Site
-
-module:
-  imports:
-    - path: github.com/CaiJimmy/hugo-theme-stack-starter
