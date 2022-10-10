@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.241.1/containers/azure-bicep
 {
-	"name": "Azure Bicep (Community)",
+	"name": "SCSWorkshop",
 	"dockerFile": "Dockerfile",
 	// Configure tool-specific properties.
 	"customizations": {
@@ -59,8 +59,14 @@
 	"features": {
 		"git": "latest",
 		//"github-cli": "latest",
-		"azure-cli": "latest",
-		"powershell": "latest"
+		//"azure-cli": "latest",
+		"powershell": "latest",
+		"ghcr.io/devcontainers/features/go:1": {
+			"version": "1.18"
+		},
+		"ghcr.io/devcontainers/features/hugo:1":{
+
+		}
 	},
 	"postAttachCommand": "pwsh .devcontainer/postCreateCommand.ps1",
 
