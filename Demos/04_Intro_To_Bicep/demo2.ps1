@@ -28,7 +28,7 @@ $resourceGroup = 'SCSWorkshop'
 $keyVaultName = 'SCSKeyVault07'
 $githubTokenSecretName = 'SCSWorkshopGitToken'
 
-$githubTokenSecret = Get-AzKeyVaultSecret -VaultName $keyVaultName -Name $githubTokenSecretName -AsPlainText 
+$githubTokenSecret = Get-AzKeyVaultSecret -VaultName $keyVaultName -Name $githubTokenSecretName -AsPlainText
 
 # take a look at the bicep file
 code myWebsite.bicep
