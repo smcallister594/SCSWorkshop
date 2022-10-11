@@ -1,7 +1,7 @@
 # set the repo to be trusted
 Set-PSRepository -Name PsGallery -InstallationPolicy Trusted
 # install the required PowerShell modules
-$modules =  'Az.Accounts', 'Az.Resources', 'Az.Storage'
+$modules =  'Az.Accounts', 'Az.Resources', 'Az.Storage', 'Az.KeyVault'
 foreach($module in $modules){
     Install-Module $module
 }
