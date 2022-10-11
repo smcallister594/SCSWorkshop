@@ -5,7 +5,7 @@
 - **Repository** - A folder of code, docs, tests, etc.
 - **Forking** - The process of creating a fork.
   - A **Fork** is a copy of a repo. </br>
-  - Can be used to experiment with someone elses code.
+  - Can be used to experiment with someone else's code.
 - **Cloning** - The process of creating a local copy of a repo on your machine.
 
 ## Prerequisites
