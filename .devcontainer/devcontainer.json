@@ -9,6 +9,7 @@
 		"vscode": {
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
+				"ms-dotnettools.csharp",  // so that we can have dotnet
 				"ms-vscode.azurecli",
 				"ms-dotnettools.vscode-dotnet-runtime",
 				"ms-azuretools.vscode-bicep",
@@ -50,7 +51,13 @@
 				"icon": "terminal-powershell"
 			}
 		},
-		"terminal.integrated.defaultProfile.linux": "pwsh"
+		"terminal.integrated.defaultProfile.linux": "pwsh",
+		"dotnetAcquisitionExtension.existingDotnetPath": [
+			{
+				"extensionId": "ms-azuretools.vscode-bicep",
+				"path": "/usr/bin/dotnet"
+			}
+		]
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
