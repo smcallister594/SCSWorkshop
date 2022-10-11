@@ -50,6 +50,12 @@ param allowConfigFileUpdates bool = true
 @description('The GitHub Access Token')
 param repositoryToken string
 
+@description('The path to the app code within the repository')
+param appLocation string = '/SouthCoastSummit'
+
+@description('The output path of the app after building')
+param outputLocation string = 'public'
+
 param enterpriseGradeCdnStatus string = 'Disabled'
 
 resource ourWebsite 'Microsoft.Web/staticSites@2022-03-01' = {
@@ -67,5 +73,9 @@ resource ourWebsite 'Microsoft.Web/staticSites@2022-03-01' = {
     provider: provider
     enterpriseGradeCdnStatus: enterpriseGradeCdnStatus
     repositoryToken: repositoryToken
+    buildProperties: {
+      appLocation: appLocation
+      outputLocation: outputLocation
+    }
   }
 }
