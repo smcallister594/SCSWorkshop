@@ -42,7 +42,7 @@ jobs:
       uses: thechetantalwar/teams-notify@v2
       with:
        teams_webhook_url: ${{ secrets.BeardTeams }}
-       message: "Please can you check the site https://happy-ocean-07fc83203.2.azurestaticapps.net because GitHub Action Build and Deploy - Action Number ${{ github.run_number }} has completed for Pull Request ${{ github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }}. "
+       message: "Please can you check the site https://happy-ocean-07fc83203-21.westeurope.2.azurestaticapps.net because GitHub Action Build and Deploy - Action Number ${{ github.run_number }} has completed for Pull Request ${{ github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }}. "
   notificationclsoe:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action == 'closed')
     needs: build_and_deploy_job
@@ -54,7 +54,7 @@ jobs:
       uses: thechetantalwar/teams-notify@v2
       with:
        teams_webhook_url: ${{ secrets.BeardTeams }}
-       message: "Pull Request ${{ github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }} has now been closed. "
+       message: "Pull Request ${{ github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }} has now been closed. The new post is live at https://happy-ocean-07fc83203.2.azurestaticapps.net . "
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
