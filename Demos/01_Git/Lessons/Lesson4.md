@@ -104,14 +104,18 @@
     git checkout -b newIdea
     ```
 
-6. Un-stash your changes
+6. Review the stashes in the VSCode Source Code
+
+    ![image](https://user-images.githubusercontent.com/981370/195087027-5ee673dd-741a-4909-ad1a-183b9ee637d9.png)
+
+7. Un-stash your changes
 
     ```bash
     git stash pop
     ```
 
-7. Now you've made your changes against the most up to date copy of the main branch.
-8. Add, Commit and Push.
+8. Now you've made your changes against the most up to date copy of the main branch.
+9. Add, Commit and Push.
 
 ## Next Up
 

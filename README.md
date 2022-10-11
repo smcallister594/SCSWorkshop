@@ -31,3 +31,7 @@ We recommend downloading the repo and getting the local demo environment setup o
 1. Once code opens, there should be a toast in the bottom right that suggests you 'ReOpen in Container'.
 1. The first time you do this it may take a little, and you'll need an internet connection, as it'll download the container images used in our demos
 1. Open a pwsh console and start your adventure... (Note it is better in a vanilla pwsh session than in the Integrated Terminal)
+
+## Workshop Attendees
+
+At your name here when we get to git lesson 3:

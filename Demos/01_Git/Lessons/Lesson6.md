@@ -20,19 +20,24 @@
     git branch -v
     ```
 
-3. View branches that have been merged into main
+3. View branches in VSCode
+
+    ![image](https://user-images.githubusercontent.com/981370/195087374-3644f25e-279b-492f-9e5a-ad1e0d4e81b8.png)
+
+
+4. View branches that have been merged into main
 
     ```bash
     git branch --merged
     ```
 
-4. Delete a single branch
+5. Delete a single branch
 
     ```bash
     git branch -d addFriends
     ```
 
-5. Delete all merged branches
+6. Delete all merged branches
 
     ```bash
     git branch --merged | ?{-not ($_ -like "*main")} | %{git branch -d $_.trim()}
