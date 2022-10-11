@@ -1,4 +1,4 @@
-name: Production Azure Static Web Apps CI/CD
+name: Production - Azure Static Web Apps CI/CD
 
 on:
   push:
