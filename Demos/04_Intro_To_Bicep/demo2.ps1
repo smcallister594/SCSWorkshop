@@ -25,9 +25,13 @@ New-AzResourceGroupDeployment -ResourceGroupName $rgNamePowerShell  -TemplateFil
 $Subscriptionid = 'bbd50fd8-6a3e-4d6f-8d20-cf6f43c9c461'
 Set-AzContext -SubscriptionId $Subscriptionid
 $resourceGroup = 'SCSWorkshop'
+$keyVaultName = 'SCSKeyVault07'
+$githubTokenSecretName = 'SCSWorkshopGitToken'
+
+$githubTokenSecret = Get-AzKeyVaultSecret -VaultName $keyVaultName -Name $githubTokenSecretName -AsPlainText 
 
 # take a look at the bicep file
 code myWebsite.bicep
 
 # Deploy the Bicep file with whatif
-New-AzResourceGroupDeployment -ResourceGroupName $resourceGroup -TemplateFile myWebsite.bicep -WhatIf
+New-AzResourceGroupDeployment -ResourceGroupName $resourceGroup -TemplateFile myWebsite.bicep -NameFromTemplate SCSWorkshop-UAT -repositoryToken $githubTokenSecret -WhatIf

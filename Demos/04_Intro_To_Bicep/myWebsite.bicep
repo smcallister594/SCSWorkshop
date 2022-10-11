@@ -47,6 +47,9 @@ param stagingEnvironmentPolicy string = 'Enabled'
 @description('Is updating the config file allowed or not')
 param allowConfigFileUpdates bool = true
 
+@description('The GitHub Access Token')
+param repositoryToken string
+
 param enterpriseGradeCdnStatus string = 'Disabled'
 
 resource ourWebsite 'Microsoft.Web/staticSites@2022-03-01' = {
@@ -63,6 +66,6 @@ resource ourWebsite 'Microsoft.Web/staticSites@2022-03-01' = {
     allowConfigFileUpdates: allowConfigFileUpdates
     provider: provider
     enterpriseGradeCdnStatus: enterpriseGradeCdnStatus
+    repositoryToken: repositoryToken
   }
-
 }
