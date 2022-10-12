@@ -22,4 +22,4 @@ jobs:
       uses: thechetantalwar/teams-notify@v2
       with:
        teams_webhook_url: ${{ secrets.BeardTeams }}
-       message: "GitHub Pull Request ${{ github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }} has now been closed."
+       message: "GitHub Pull Request ${{ github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }} has now been closed. The new post is live at https://happy-ocean-07fc83203.2.azurestaticapps.net . "
