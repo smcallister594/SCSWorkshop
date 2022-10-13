@@ -65,8 +65,6 @@
 	"remoteUser": "vscode",
 	"features": {
 		"git": "latest",
-		//"github-cli": "latest",
-		//"azure-cli": "latest",
 		"powershell": "latest",
 		"ghcr.io/devcontainers/features/go:1": {
 			"version": "1.18"
