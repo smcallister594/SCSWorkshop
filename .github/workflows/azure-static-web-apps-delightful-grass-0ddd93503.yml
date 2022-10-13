@@ -43,3 +43,16 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_DELIGHTFUL_GRASS_0DDD93503 }}
           action: "close"
+
+  notification:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    needs: build_and_deploy_job
+    runs-on: ubuntu-latest
+    name: Notify Teams that we need to check the staging site
+    steps:
+    - name: Send a Notification to Teams
+      id: notify
+      uses: thechetantalwar/teams-notify@v2
+      with:
+       teams_webhook_url: ${{ secrets.BeardTeams }}
+       message: "Please can you check the site https://happy-ocean-07fc83203-${{ github.event.pull_request.number }}.westeurope.2.azurestaticapps.net because GitHub Action Build and Deploy - Action Number ${{ github.run_number }} has completed for Pull Request ${{ github.event.pull_request.title }} created by user ${{ github.event.pull_request.user.login }}. "
