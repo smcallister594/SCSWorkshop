@@ -20,15 +20,22 @@ go version go1.19.1 linux/amd64
 
 ## Create our website
 
+0. Change directory
+
+    ```PowerShell
+    cd /workspaces/SCSWorkshop/
+    ```
+
+
 1. Create a new hugo site
 
-    ```bash
+    ```PowerShell
     hugo new site SouthCoastSummit
     ```
 
 1. Change directory
 
-    ```bash
+    ```PowerShell
     cd SouthCoastSummit
     ```
 
@@ -57,7 +64,7 @@ go version go1.19.1 linux/amd64
 
 1. Open `module.toml`
 
-    ```bash
+    ```PowerShell
     code config/_default/module.toml
     ```
 
@@ -130,9 +137,20 @@ go version go1.19.1 linux/amd64
     hugo server
     ```
 
-
-
 1. Click the toast, or open a browser and go to http://localhost:1313/
+
+## To the internet!
+
+1. Create a new branch to work on
+
+    ```PowerShell
+    git checkout -b postv7
+    ```
+
+2. Add files
+3. Add a commit message
+4. Push to remote
+5. Create a PR
 
 ## Notes
 
