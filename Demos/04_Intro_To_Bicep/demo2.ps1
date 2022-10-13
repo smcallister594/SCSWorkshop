@@ -34,4 +34,4 @@ $githubTokenSecret = Get-AzKeyVaultSecret -VaultName $keyVaultName -Name $github
 code myWebsite.bicep
 
 # Deploy the Bicep file with whatif
-New-AzResourceGroupDeployment -ResourceGroupName $resourceGroup -TemplateFile myWebsite.bicep -NameFromTemplate SCSWorkshop-UAT -repositoryToken $githubTokenSecret -WhatIf
+New-AzResourceGroupDeployment -ResourceGroupName $resourceGroup -TemplateFile myWebsite.bicep -NameFromTemplate SCSWorkshop -repositoryToken $githubTokenSecret -WhatIf
