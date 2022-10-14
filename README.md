@@ -37,5 +37,9 @@ We recommend downloading the repo and getting the local demo environment setup o
 ## Workshop Attendees
 
 At your name here when we get to git lesson 3:
+<<<<<<< Updated upstream
 
 Ken Sayers
+=======
+- @ScotScottMcA - I can't do pipes with this silly keyboard. 
+>>>>>>> Stashed changes
