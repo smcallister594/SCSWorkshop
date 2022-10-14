@@ -37,3 +37,4 @@ We recommend downloading the repo and getting the local demo environment setup o
 ## Workshop Attendees
 
 At your name here when we get to git lesson 3:
+- @ScotScottMcA
