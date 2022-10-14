@@ -1,5 +1,7 @@
 # South Coast Summit Workshop
 
+Jess is AMAZING
+
 Repo containing source code for the South Coast Summit Workshop - Build a Hugo Website in Azure using GitHub Actions and Azure Bicep in a day with Dev Containers
 
 We recommend downloading the repo and getting the local demo environment setup on your laptop. This way you can follow along with the demos.
